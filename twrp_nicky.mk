@@ -30,7 +30,7 @@ $(call inherit-product, device/realme/nicky/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := nicky
-PRODUCT_NAME := omni_nicky
+PRODUCT_NAME := twrp_nicky
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := 3Pro/5Pro/X/XT
 PRODUCT_MANUFACTURER := Realme
