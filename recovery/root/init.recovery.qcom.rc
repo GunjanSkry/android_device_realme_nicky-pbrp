@@ -25,7 +25,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import /init.recovery.qcom_decrypt.fbe.rc
 import /init.recovery.qcom_decrypt.rc
 
 on fs
@@ -38,6 +37,8 @@ on init
     setprop vendor.gatekeeper.disable_spu true
 
 on boot
+    setprop sys.usb.config adb
+    write /sys/class/power_supply/usb/otg_switch 1
     chmod 0777 /system/bin/custom-script.sh
     start custom-script
 
